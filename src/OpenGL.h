@@ -235,6 +235,35 @@ private:
 		std::vector<RectCoords> m_vecRectCoords;
 	};
 
+	class VerticesBuffers {
+	public:
+		enum class BufferType {
+			none,
+			rects,
+			triangles
+		};
+
+		void init();
+		void destroy();
+		void setBuffers(BufferType _type, u32 _count, GLsizeiptr _size, const GLvoid * _data);
+		GLint getCount(BufferType _type) const;
+
+	private:
+		struct Buffers {
+			GLuint vao = 0;
+			GLuint vbo = 0;
+
+			GLintptr offset = 0;
+			GLint count = 0;
+			GLuint bufSize = 0;
+		};
+
+		Buffers m_rectsBuffers;
+		Buffers m_trisBuffers;
+		BufferType m_type = BufferType::none;
+	};
+
+
 	struct GLVertex
 	{
 		float x, y, z, w;
@@ -248,7 +277,8 @@ private:
 	struct {
 		SPVertex vertices[VERTBUFF_SIZE];
 		GLubyte elements[ELEMBUFF_SIZE];
-		int num;
+		u32 num;
+		int maxElement;
 	} triangles;
 	std::vector<SPVertex> m_dmaVertices;
 	GLVertex m_rect[4];
@@ -259,6 +289,7 @@ private:
 	bool m_bFlatColors;
 	bool m_bDmaVertices;
 	TexrectDrawer m_texrectDrawer;
+	VerticesBuffers m_vbo;
 
 	GLuint m_programCopyTex;
 };
