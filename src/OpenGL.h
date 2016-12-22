@@ -2,6 +2,7 @@
 #define OPENGL_H
 
 #include <vector>
+#include <unordered_map>
 
 #ifdef OS_WINDOWS
 #ifndef NOMINMAX
@@ -251,7 +252,7 @@ private:
 		void destroy();
 		void setTrianglesBuffers(bool _flatColors, u32 _count, const SPVertex * _data);
 		void setRectsBuffers(u32 _count, const RectVertex * _data);
-		GLint getCount(BufferType _type) const;
+		GLint getPos(BufferType _type) const;
 
 	private:
 		struct Buffers {
@@ -259,9 +260,8 @@ private:
 			GLuint vbo = 0;
 
 			GLintptr offset = 0;
-			GLint count = 0;
+			GLint pos = 0;
 			GLuint bufSize = 0;
-			BufferType type = BufferType::none;
 		};
 
 		struct Vertex
@@ -273,12 +273,13 @@ private:
 		};
 
 		void _convertFromSPVertex(bool _flatColors, u32 _count, const SPVertex * _data);
-		void _setBuffers(Buffers & _buffers, GLsizeiptr _size);
 
 		Buffers m_rectsBuffers;
 		Buffers m_trisBuffers;
 		BufferType m_type = BufferType::none;
 		Vertex m_vertices[VERTBUFF_SIZE];
+		typedef std::unordered_map<u32, u32> BufferOffsets;
+		BufferOffsets m_rectBufferOffsets;
 	};
 
 
