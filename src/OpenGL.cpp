@@ -1391,7 +1391,6 @@ void OGLRender::_prepareDrawTriangle(bool _dma)
 
 	m_renderState = rsTriangle;
 	m_bDmaVertices = _dma;
-	currentCombiner()->updateRenderState();
 
 	bool bFlatColors = false;
 	if (!RSP.bLLE && (gSP.geometryMode & G_LIGHTING) == 0) {
@@ -1579,7 +1578,6 @@ void OGLRender::drawLine(int _v0, int _v1, float _width)
 
 	if (m_renderState != rsLine || CombinerInfo::get().isChanged()) {
 		m_renderState = rsLine;
-		currentCombiner()->updateRenderState();
 	}
 
 	if ((triangles.vertices[_v0].modify & MODIFY_XY) != 0)
@@ -1611,8 +1609,6 @@ void OGLRender::drawRect(int _ulx, int _uly, int _lrx, int _lry, float *_pColor)
 	if (updateArrays || CombinerInfo::get().isChanged()) {
 		m_renderState = rsRect;
 	}
-
-	currentCombiner()->updateRenderState();
 
 	FrameBuffer * pCurrentBuffer = frameBufferList().getCurrent();
 	OGLVideo & ogl = video();
@@ -1826,7 +1822,6 @@ void OGLRender::drawTexturedRect(const TexturedRectParams & _params)
 		CombinerInfo & cmbInfo = CombinerInfo::get();
 		cmbInfo.setPolygonMode(rsTexRect);
 		cmbInfo.update();
-		currentCombiner()->updateRenderState();
 		_updateTextures(rsTexRect);
 		cmbInfo.updateParameters(rsTexRect);
 	} else {
@@ -1844,8 +1839,6 @@ void OGLRender::drawTexturedRect(const TexturedRectParams & _params)
 			}
 			glVertexAttrib4f(SC_RECT_COLOR, 0, 0, 0, alpha);
 		}
-
-		currentCombiner()->updateRenderState();
 
 		if (_params.texrectCmd && texturedRectSpecial != nullptr && texturedRectSpecial(_params)) {
 			gSP.changed |= CHANGED_GEOMETRYMODE;

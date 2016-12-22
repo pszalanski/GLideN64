@@ -549,8 +549,6 @@ void ShaderCombiner::_locateUniforms() {
 	LocateUniform(uDeltaZ);
 	LocateUniform(uAlphaTestValue);
 
-	LocateUniform(uRenderState);
-
 	LocateUniform(uScreenScale);
 	LocateUniform(uDepthScale);
 	LocateUniform(uFogScale);
@@ -601,7 +599,6 @@ void ShaderCombiner::update(bool _bForce) {
 		}
 
 		updateFrameBufferInfo(true);
-		updateRenderState(true);
 	}
 
 	updateFogMode(_bForce);
@@ -613,11 +610,6 @@ void ShaderCombiner::update(bool _bForce) {
 	updateDepthInfo(_bForce);
 	updateRenderTarget(_bForce);
 	updateScreenCoordsScale(_bForce);
-}
-
-void ShaderCombiner::updateRenderState(bool _bForce)
-{
-	m_uniforms.uRenderState.set(video().getRender().getRenderState(), _bForce);
 }
 
 void ShaderCombiner::updateRenderTarget(bool _bForce)

@@ -20,7 +20,6 @@ public:
 	void updateDepthInfo(bool _bForce = false);
 	void updateAlphaTestInfo(bool _bForce = false);
 	void updateTextureInfo(bool _bForce = false);
-	void updateRenderState(bool _bForce = false);
 	void updateRenderTarget(bool _bForce = false);
 	void updateScreenCoordsScale(bool _bForce = false);
 	void updateBlendMode(bool _bForce = false);
@@ -116,7 +115,7 @@ private:
 			uTexNoise, uTlutImage, uZlutImage, uDepthImage,
 			uFogUsage, uEnableLod, uEnableAlphaTest,
 			uEnableDepth, uEnableDepthCompare, uEnableDepthUpdate,
-			uDepthMode, uDepthSource, uRenderState,
+			uDepthMode, uDepthSource,
 			uMaxTile, uTextureDetail, uTexturePersp, uTextureFilterMode, uMSAASamples,
 			uAlphaCompareMode, uAlphaDitherMode, uColorDitherMode,
 			uCvgXAlpha, uAlphaCvgSel, uRenderTarget,
