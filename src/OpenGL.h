@@ -187,8 +187,6 @@ private:
 
 	void _setSpecialTexrect() const;
 
-	void _setColorArray() const;
-	void _setTexCoordArrays() const;
 	void _setBlendMode() const;
 	void _legacySetBlendMode() const;
 	void _updateCullFace() const;
@@ -235,6 +233,12 @@ private:
 		std::vector<RectCoords> m_vecRectCoords;
 	};
 
+	struct RectVertex
+	{
+		float x, y, z, w;
+		float s0, t0, s1, t1;
+	};
+
 	class VerticesBuffers {
 	public:
 		enum class BufferType {
@@ -245,7 +249,8 @@ private:
 
 		void init();
 		void destroy();
-		void setBuffers(BufferType _type, u32 _count, GLsizeiptr _size, const GLvoid * _data);
+		void setTrianglesBuffers(bool _flatColors, u32 _count, const SPVertex * _data);
+		void setRectsBuffers(u32 _count, const RectVertex * _data);
 		GLint getCount(BufferType _type) const;
 
 	private:
@@ -256,19 +261,26 @@ private:
 			GLintptr offset = 0;
 			GLint count = 0;
 			GLuint bufSize = 0;
+			BufferType type = BufferType::none;
 		};
+
+		struct Vertex
+		{
+			f32 x, y, z, w;
+			f32 r, g, b, a;
+			f32 s, t;
+			u32 modify;
+		};
+
+		void _convertFromSPVertex(bool _flatColors, u32 _count, const SPVertex * _data);
+		void _setBuffers(Buffers & _buffers, GLsizeiptr _size);
 
 		Buffers m_rectsBuffers;
 		Buffers m_trisBuffers;
 		BufferType m_type = BufferType::none;
+		Vertex m_vertices[VERTBUFF_SIZE];
 	};
 
-
-	struct GLVertex
-	{
-		float x, y, z, w;
-		float s0, t0, s1, t1;
-	};
 
 	RENDER_STATE m_renderState;
 	OGL_RENDERER m_oglRenderer;
@@ -281,7 +293,7 @@ private:
 		int maxElement;
 	} triangles;
 	std::vector<SPVertex> m_dmaVertices;
-	GLVertex m_rect[4];
+	RectVertex m_rect[4];
 
 	u32 m_modifyVertices;
 	GLfloat m_maxLineWidth;
