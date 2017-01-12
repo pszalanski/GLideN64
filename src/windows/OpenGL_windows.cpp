@@ -88,6 +88,35 @@ bool OGLVideoWindows::_start()
 		return false;
 	}
 
+	PFNWGLGETEXTENSIONSSTRINGARBPROC wglGetExtensionsStringARB =
+			(PFNWGLGETEXTENSIONSSTRINGARBPROC)wglGetProcAddress("wglGetExtensionsStringARB");
+
+	if (wglGetExtensionsStringARB != NULL) {
+		const char * wglextensions = wglGetExtensionsStringARB(hDC);
+
+		if (strstr(wglextensions, "WGL_ARB_create_context") != nullptr &&
+				strstr(wglextensions, "WGL_ARB_create_context_profile") != nullptr) {
+			PFNWGLCREATECONTEXTATTRIBSARBPROC wglCreateContextAttribsARB =
+					(PFNWGLCREATECONTEXTATTRIBSARBPROC)wglGetProcAddress("wglCreateContextAttribsARB");
+
+			const int attribList[] =
+			{
+				WGL_CONTEXT_MAJOR_VERSION_ARB, 3,
+				WGL_CONTEXT_MINOR_VERSION_ARB, 3,
+				WGL_CONTEXT_PROFILE_MASK_ARB, WGL_CONTEXT_CORE_PROFILE_BIT_ARB,
+				WGL_CONTEXT_FLAGS_ARB, WGL_CONTEXT_FORWARD_COMPATIBLE_BIT_ARB | WGL_CONTEXT_DEBUG_BIT_ARB,
+				0        //End
+			};
+
+			HGLRC coreHrc = wglCreateContextAttribsARB(hDC, 0, attribList);
+			if (coreHrc != NULL) {
+				wglDeleteContext(hRC);
+				wglMakeCurrent(hDC, coreHrc);
+				hRC = coreHrc;
+			}
+		}
+	}
+
 	return _resizeWindow();
 }
 

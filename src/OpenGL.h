@@ -55,6 +55,7 @@ typedef char GLchar;
 #elif defined(OS_WINDOWS)
 #include <GL/gl.h>
 #include <GL/glext.h>
+#include <GL/wglext.h>
 #include "common/GLFunctions.h"
 #define GL_IMAGE_TEXTURES_SUPPORT
 #define GL_MULTISAMPLING_SUPPORT
