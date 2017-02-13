@@ -426,7 +426,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="1103"/>
         <source>Use GlideN64 per-game settings</source>
-        <translation type="unfinished">Nutze GlideN64 angepasste Einstellung pro Spiel</translation>
+        <translation type="unfinished">Nutze GlideN64 pro Spiel Einstellung</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1137"/>
@@ -508,7 +508,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
         <location filename="configDialog.ui" line="1421"/>
         <source>Render 2D elements in N64 resolution (best quality, can be slow)</source>
         <extracomment>2D elements, formerly labelled texrects, are usually used for title screens or HUDs</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>2D Elemente in N64 Auflösung rendern (beste Qualität, kann langsam sein)</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1431"/>
@@ -519,30 +519,30 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
         <location filename="configDialog.ui" line="1452"/>
         <source>Fix black lines between 2D elements:</source>
         <extracomment>2D elements, formerly labelled texrects, are usually used for title screens or HUDs</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Schwarze Linien zwischen 2D Elementen korrigieren:</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1468"/>
         <source>For adjacent 2D elements</source>
         <extracomment>The label for this control is &quot;Fix black lines between 2D elements&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Für benachbarte 2D Elemente</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1478"/>
         <source>Always</source>
         <extracomment>The label for this control is &quot;Fix black lines between 2D elements&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Immer</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1488"/>
         <source>Never</source>
         <extracomment>The label for this control is &quot;Fix black lines between 2D elements&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Nie</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1567"/>
         <source>Frame buffer</source>
-        <translation type="unfinished"></translation>
+        <translation>Frame Buffer</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1637"/>
@@ -557,7 +557,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="1699"/>
         <source>Copy auxiliary color buffers to N64 memory (sometimes slow, fewer game issues)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiere auxiliar Farbpuffer in den N64 Hauptspeicher (manchmal langsam, weniger Spieleprobleme)</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1713"/>
@@ -567,7 +567,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="1734"/>
         <source>Frame buffer swap on:</source>
-        <translation type="unfinished"></translation>
+        <translation>Frame Buffer Austausch:</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1781"/>
@@ -577,7 +577,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="1784"/>
         <source>Use emulator help to read/write frame buffers</source>
-        <translation type="unfinished"></translation>
+        <translation>Nutze die Hilfe des Emulators, um die Frame Buffer zu lesen / zu schreiben</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1794"/>
@@ -588,7 +588,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
         <location filename="configDialog.ui" line="1797"/>
         <source>Read color buffer in 4 KB chunks</source>
         <extracomment>&quot;Read&quot; refers to &quot;Use emulator help to read/write frame buffers&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Lies den Farbpuffer in 4KB Stücken aus</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1804"/>
@@ -599,7 +599,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
         <location filename="configDialog.ui" line="1807"/>
         <source>Read depth buffer in 4 KB chunks</source>
         <extracomment>&quot;Read&quot; refers to &quot;Use emulator help to read/write frame buffers&quot;</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Lies den Tiefenpuffer in 4KB Stücken aus</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1825"/>
@@ -609,7 +609,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="1846"/>
         <source>Copy video card frame buffer to N64 memory:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiere den Grafikkarten Frame Buffer in den N64 Speicher:</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1875"/>
@@ -799,109 +799,109 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="3000"/>
         <source>OSD</source>
-        <translation type="unfinished"></translation>
+        <translation>OSD</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3003"/>
         <source>On-screen display</source>
-        <translation type="unfinished"></translation>
+        <translation>On-screen display</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3019"/>
         <source>Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Position</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3068"/>
         <source>Top left</source>
-        <translation type="unfinished"></translation>
+        <translation>Oben links</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3120"/>
         <source>Top</source>
-        <translation type="unfinished"></translation>
+        <translation>Oben</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3172"/>
         <source>Top right</source>
-        <translation type="unfinished"></translation>
+        <translation>Oben rechts</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3234"/>
         <source>Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Links</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3328"/>
         <source>Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechts</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3384"/>
         <source>Bottom left</source>
-        <translation type="unfinished"></translation>
+        <translation>Unten links</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3436"/>
         <source>Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Unten</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3488"/>
         <source>Bottom right</source>
-        <translation type="unfinished"></translation>
+        <translation>Unten rechts</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3535"/>
         <source>Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Text</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3567"/>
         <location filename="configDialog.ui" line="3602"/>
         <location filename="configDialog.ui" line="3621"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This font is used for all on-screen messages. Not all fonts can be used. If messages aren&apos;t displayed, try a different font.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Diese Schriftart wird für alle Bildschirmnachrichten benutzt. Nicht alle Schriftarten können verwendet werden. Falls keine Nachrichten angezeigt werden, probiere eine andere Schriftart aus.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3570"/>
         <source>Select...</source>
-        <translation type="unfinished"></translation>
+        <translation>Auswählen...</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3586"/>
         <source>Color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Farbe:</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3605"/>
         <source>Font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Schriftart:</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3650"/>
         <source>Pick...</source>
-        <translation type="unfinished"></translation>
+        <translation>Aussuchen...</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3675"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorschau</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3711"/>
         <source>Display frames per second</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige Bildrate an</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3718"/>
         <source>Display vertical interrupts per second</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige vertikale Interrupts an</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3725"/>
         <source>Display percentage</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige Prozent an</translation>
     </message>
 </context>
 </TS>
