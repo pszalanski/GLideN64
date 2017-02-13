@@ -619,7 +619,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="1902"/>
         <source>Copy video card depth buffer to N64 memory:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiere Grafikkarten Tiefenpuffer in den N64 Speicher:</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1938"/>
@@ -629,7 +629,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="1941"/>
         <source>Enable N64-style depth compare (experimental)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktiviere original N64 Depth Compare (experimentell)</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="1948"/>
@@ -639,12 +639,12 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="1951"/>
         <source>Render N64 frame buffer to output</source>
-        <translation type="unfinished"></translation>
+        <translation>Rendere N64 Frame Buffer in die Ausgabe</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2006"/>
         <source>N64 textures</source>
-        <translation type="unfinished"></translation>
+        <translation>N64 Texturen</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2024"/>
@@ -664,7 +664,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2123"/>
         <source>Decrease color banding (recommended for xBRZ enhancement)</source>
-        <translation type="unfinished"></translation>
+        <translation>Verringere Color Banding (empfohlen für die xBRZ Verbesserung)</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2130"/>
@@ -674,7 +674,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2133"/>
         <source>Disable for backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation>Für Hintegründe deaktivieren</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2142"/>
@@ -684,12 +684,12 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2169"/>
         <source>Enhanced texture cache size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cachegröße für verbesserte Texturen:</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2204"/>
         <source>Texture pack</source>
-        <translation type="unfinished"></translation>
+        <translation>Texturpaket</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2240"/>
@@ -699,7 +699,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2287"/>
         <source>Browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>Durchsuchen...</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2315"/>
@@ -709,7 +709,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2318"/>
         <source>Use full transparencies (recommended for newer texture packs)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nutze volle Transparenz (empfohlen für neue Texturpakete)</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2325"/>
@@ -719,7 +719,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2328"/>
         <source>Alternative CRC calculation (for old Rice Video packs)</source>
-        <translation type="unfinished"></translation>
+        <translation>Alternative CRC Berechnung (für alte Rice Video Pakete)</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2338"/>
@@ -729,7 +729,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2341"/>
         <source>Dump/edit textures</source>
-        <translation type="unfinished"></translation>
+        <translation>Texturen ausgeben / bearbeiten</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2381"/>
@@ -739,7 +739,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2384"/>
         <source>Save enhanced texture cache to hard disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Speichere Cache mit verbesserten Texturen auf die Festplatte</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2394"/>
@@ -754,22 +754,22 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2407"/>
         <source>Convert textures to 16 bpp</source>
-        <translation type="unfinished"></translation>
+        <translation>Konvertiere Texturen nach 16 bpp</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2436"/>
         <source>Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2482"/>
         <source>Blending:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vermischung:</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2499"/>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Mitel</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2846"/>
@@ -779,7 +779,7 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2849"/>
         <source>Custom gamma correction</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzerdefinierte Gammakorrektur</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2861"/>
@@ -789,12 +789,12 @@ The highest in a sequence of numbers. In this case, 16.</extracomment>
     <message>
         <location filename="configDialog.ui" line="2882"/>
         <source>Correction level:</source>
-        <translation type="unfinished"></translation>
+        <translation>Korrekturgrad:</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="2986"/>
         <source>All of the options on this tab have been disabled because frame buffer emulation has been turned off.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Optionen in dieser Registerkarte wurden deaktiviert, da die Frame Buffer Emulation abgeschaltet ist.</translation>
     </message>
     <message>
         <location filename="configDialog.ui" line="3000"/>
